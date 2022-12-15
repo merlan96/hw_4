@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+  </head>
+  <body>
+    <main>
+      <h1>Exercise 1</h1>
+
+    1. Day 0: Hello, World
+
+    <!--function greeting(parameterVariable) {
+      console.log('Hello, World!');
+      console.log(parameterVariable)
+
+    }
+    function main() {
+      const parameterVariable = readLine();
+      greeting(parameterVariable);}-->
+
+    2. Day 0: Data types
+
+    <!--function performOperation(secondInteger, secondDecimal, secondString) {
+      const firstInteger = 4;
+      const firstDecimal = 4.0;
+      const firstString = 'HackerRank ';
+      
+      console.log(firstInteger + parseInt(secondInteger)); 
+      console.log(firstDecimal + parseFloat(secondDecimal)) 
+      console.log(firstString + secondString) -->
+    
+    3. Day 1: Arithmetic operators
+      <!--function getArea(length, width) {
+        let area;
+        // Write your code here
+         area = length * width;
+        return area;}-->
+
+    4. Day 1: Functions
+
+    <!--function factorial(n)
+
+    { if(n === 1) return 1; if(n >= 2) return n * factorial(n -1); }-->
+
+    5. Let and const
+    <!--const PI = Math.PI;
+    let r = parseFloat(readLine());
+    // Print the area of the circle:
+    let area = PI * r * r;
+    console.log(area);
+    // Print the perimeter of the circle:
+    let perimeter = 2 * PI * r;
+    console.log(perimeter);-->
+
+    6. Day 2: If else
+
+    <!--function getGrade(score) {
+      let grade;
+      // Write your code here
+      
+      if(score > 25 && score <= 30){
+          return "A" ;
+      }
+      if(score > 20 && score <= 25){
+          return "B" ;
+      }
+      if(score > 15 && score <= 20){
+          return "C" ;
+      }
+      if(score > 10 && score <= 15){
+          return "D" ;
+      }
+      if(score > 5 && score <= 10){
+          return "E" ;
+      }
+      if(score >= 0 && score <= 5){
+          return "F" ;
+      }
+      
+      return grade;
+    }-->
+
+    7. Day 2: Switch
+
+    <!--function getLetter(s) {
+      let letter;
+      
+      let char =s.split("")[0];
+      
+      switch(char){
+             
+              case 'a' || 'e' || 'i' || 'o' ||'u': letter = 'A'
+                  break;
+              
+              case 'b' || 'c' || 'd' || 'f' || 'g': letter = 'B'
+                  break;
+             
+              case  'h' || 'j' || 'k' || 'l' || 'm': letter = 'C'
+                  break;
+              
+              default:
+                  letter = 'D'        
+      }
+      return letter;
+    }-->
+
+    8. Loops
+
+    <!--function vowelsAndConsonants(s) {
+      let vowel = [];
+      let consonants = [];
+      for (let i =0; i<s.length; i++){
+        if (s[i]=='a' || s[i]== 'e' || s[i]== 'i' || s[i]== 'o' || s[i]== 'u'){
+          console.log(s[i]);
+        }
+      }
+      for (let i =0; i<s.length; i++){
+        if (s[i]!='a' && s[i]!= 'e' && s[i]!= 'i' && s[i]!= 'o' && s[i]!= 'u'){
+          console.log(s[i]);
+        }
+      }
+    }-->  
+
+    9. Arrays
+
+    <!--function getSecondLargest(nums) {
+      // Complete the function
+      nums = new Set(nums) 
+      nums = [...nums] 
+      nums.sort((a, b) => b - a); 
+      return (nums[1]); 
+    }-->  
+
+    10. Try catch and finally
+
+    <!--function reverseString(s) {
+      try {
+    let reversed= s.split("").reverse().join("");
+    
+    //return joinArray;
+    console.log(reversed);
+    }
+    catch(err) {
+        console.log(err.message);
+        console.log(s);
+      
+    }
+    finally {
+      
+    }
+    }-->  
+
+    11. Throw
+
+    <!--function isPositive(a) {
+    
+      try {
+          if(a>0){
+             return "YES";
+          }
+          else if(a<0){
+              throw new Error('Negative Error');
+            }
+           else{
+              throw new Error('Zero Error');
+          }       
+          }
+          catch(err) {
+              return err.message;
+          }
+      
+    }-->  
+
+    12. Button
+
+    <body>
+      <main>
+      <head>
+          <link rel="stylesheet" href="css/button.css" type="text/css">
+      </head>
+      
+      <body>
+          <script src="js/button.js" type="text/javascript"></script>
+   <button id="btn" onclick="( () => this.innerHTML++ )()" style="width: 96px; height: 48px; font-size: 24px;">0</button>
+      </body>
+
+    </main>
+  </body>
+</html>
